@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.slider_inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200%;
+    display: grid;
+    grid-template-columns: repeat(7,  1fr);
+    gap: 5px;
+    pointer-events: none;
+}
+
+.slider_item {
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
